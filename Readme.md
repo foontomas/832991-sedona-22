@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Денис Попов](https://up.htmlacademy.ru/adaptive/22/user/832991).
-* Наставник: [Мария Наг](https://htmlacademy.ru/profile/id47061).
+* Наставник: [Мария Белогубова](https://htmlacademy.ru/profile/id87018).
 
 ---
 
