@@ -1,0 +1,139 @@
+.map-search__h3 {
+  font-size: 21px;
+}
+
+.map-search__p {
+  line-height: 24px;
+}
+
+.map-search__link-button {
+  font-size: 21px;
+  color: @white;
+  background-color: @blue-back;
+  display: inline-block;
+  padding: 16px 47px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  min-width: 280px;
+  border: none;
+  font-family: "PT Sans", "Arial", sans-serif;
+  text-transform: uppercase;
+  line-height: 26px;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.map-search__link-button:hover,
+.map-search__link-button:focus {
+  background-color: @mobile-nav-hover;
+  outline: none;
+  border: none;
+}
+
+.map-search__link-button:active {
+  background-color: @mobile-nav-active;
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+  border: none;
+}
+
+.map-search__form-title:disabled {
+  background-color: @fieldset-border;
+}
+
+.map-search__form:active,
+.map-search__form:focus {
+  outline: none;
+  border: none;
+}
+
+.map-search__map {
+  width: 100%;
+  min-width: 320px;
+  height: 350px;
+}
+
+.map-search__wrapper {
+  line-height: 26px;
+}
+
+@media (max-width: @mobile-width-only) {
+  .map-search__wrapper {
+    padding-top: 37px;
+    padding-right: 15px;
+    padding-bottom: 27px;
+    padding-left: 15px;
+  }
+
+  .map-search__h3 {
+    margin-top: 33px;
+    margin-bottom: 21px;
+  }
+
+  .map-search__p {
+    margin-top: 0;
+    margin-bottom: 27px;
+  }
+
+  .map-search__form {
+    margin-bottom: 49px;
+  }
+
+  .map-search__map {
+    padding-bottom: 10px;
+  }
+
+  .map-search__br {
+    display: none;
+  }
+
+  .map-search__link-button {
+    margin-bottom: 49px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .map-search__wrapper {
+    margin-bottom: 58px;
+    padding-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .map-search__map {
+    min-width: 768px;
+  }
+
+  .map-search__h3 {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+
+  .map-search__p {
+    margin-top: 0;
+    margin-bottom: 38px;
+  }
+
+  .map-search__link-button {
+    width: 458px;
+    padding-top: 15px;
+    padding-bottom: 17px;
+    display: block;
+  }
+
+  .map-search__form {
+    margin-bottom: 58px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .map-search__p {
+    margin-bottom: 42px;
+  }
+
+  .map-search__link-button {
+    margin-bottom: 10px;
+  }
+}

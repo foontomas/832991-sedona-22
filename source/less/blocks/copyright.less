@@ -1,0 +1,33 @@
+.copyright {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyright__text {
+  margin-top: 0;
+  margin-right: 13px;
+  margin-bottom: 10px;
+  height: 26px;
+
+  @media (max-width: @mobile-width-only) {
+    padding-top: 8px;
+  }
+
+  @media (min-width: @tablet-width) {
+    margin-bottom: 0;
+  }
+}
+
+.copyright__link {
+  margin-bottom: 3px;
+}
+
+.copyright__link:hover .copyright__logo,
+.copyright__link:focus .copyright__logo {
+  fill: @blue-back;
+}
+
+.copyright__link:active .copyright__logo {
+  fill: rgba(0, 0, 0, 0.3);
+}
