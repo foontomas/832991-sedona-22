@@ -33,17 +33,17 @@
   width: 100%;
   height: 389px;
   background-color: @welcome-back;
-  background-image: url("../img/page-header/welcome.svg"), url("../img/page-header/triangle.svg"), url("../img/page-header/background-photo.jpg");
-  background-size: 282px 214px, auto, cover;
-  background-position: center 52%, 50% 100.2%, center 29%;
+  background-image: url("../img/page-header/welcome.svg"), url("../img/page-header/background-photo.jpg");
+  background-size: 282px 214px, cover;
+  background-position: center 52%, center 29%;
   position: relative;
   background-repeat: no-repeat, no-repeat;
 
   &--simple {
     height: 158px;
-    background-image: url("../img/page-header/sedona-simple.svg"), url("../img/page-header/triangle.svg"), url("../img/page-header/background-photo.jpg");
-    background-size: 229px 39px, auto, cover;
-    background-position: 49% 44%, 50% 100.2%, center 29%;
+    background-image: url("../img/page-header/sedona-simple.svg"), url("../img/page-header/background-photo.jpg");
+    background-size: 229px 39px, cover;
+    background-position: 49% 44%, center 29%;
 
     position: relative;
     background-repeat: no-repeat, no-repeat;
@@ -59,14 +59,18 @@
     bottom: 0;
     clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 50% 100%, 0% 0%);
     margin-bottom: -1px;
+
+    @media (max-width: @mobile-width-only) {
+      height: 28px;
+    }
   }
 }
 
 @media (min-width: @tablet-width) {
   .page-header__welcome-banner {
     height: 518px;
-    background-size: 461px 350px, auto, cover;
-    background-position: center 47%, 50% 100.2%, center 31%;
+    background-size: 461px 350px, cover;
+    background-position: center 47%, center 31%;
 
     &::after,
     &::before {

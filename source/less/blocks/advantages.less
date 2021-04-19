@@ -11,11 +11,6 @@
   font-size: 14px;
   line-height: 21px;
   min-width: 320px;
-  /*h3{
-    font-size: 18px;
-    line-height: 26px;
-    font-weight: 700;
-  }*/
 
   &--additional {
     background-color: @grey-back;
@@ -27,22 +22,18 @@
 }
 
 .advantages__image {
-  /*width: 320px;*/
-  height: 260px;
+  height: 100%;
   text-align: center;
   display: block;
-  /*background-size: auto 260px;
-  background-position: center;
-  background-repeat: no-repeat;*/
 
   &--image-1 {
-    /*background-image: url("../img/feature-picture.jpg");*/
     margin-bottom: 35px;
   }
+}
 
-  /*&--image-2 {
-    background-image: url("../img/red-rocks.jpg");
-  }*/
+.advantages__image img {
+  object-fit: cover;
+  width: 100%;
 }
 
 .advantages__h3 {
@@ -100,7 +91,6 @@
   }
 
   .advantages__text-card--additional .advantages__number {
-    /*margin-top: 0px;*/
     margin-bottom: 16px;
   }
 
@@ -126,13 +116,11 @@
 @media (min-width: @tablet-width) {
   .advantages__text-card {
     display: inline-block;
-    /*width: 256px;*/
     width: 33.333%;
     min-width: 256px;
     padding-top: 40px;
     padding-right: 32px;
     padding-bottom: 43px;
-    /*padding-bottom: 40px;*/
     padding-left: 32px;
     box-sizing: border-box;
 
@@ -165,7 +153,6 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    /*width: 768px;*/
     grid-template-rows: 256px 330px 256px 256px;
     grid-template-columns: 100%;
     justify-content: center;
@@ -215,7 +202,6 @@
 
 @media (min-width: @desktop-width) {
   .advantages__text-card {
-    /*width: 400px;*/
     width: 33.333%;
     padding-top: 51px;
     padding-bottom: 53px;
@@ -233,7 +219,6 @@
   .advantages__wrapper {
     width: 1200px;
     grid-template-rows: 256px 330px 256px 256px;
-    /*grid-template-columns: 1200px;*/
   }
 
   .advantages__image {
