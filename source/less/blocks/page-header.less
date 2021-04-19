@@ -35,7 +35,7 @@
   background-color: @welcome-back;
   background-image: url("../img/page-header/welcome.svg"), url("../img/page-header/triangle.svg"), url("../img/page-header/background-photo.jpg");
   background-size: 282px 214px, auto, cover;
-  background-position: center 52%, 50% 100%, center 29%;
+  background-position: center 52%, 50% 100.2%, center 29%;
   position: relative;
   background-repeat: no-repeat, no-repeat;
 
@@ -43,10 +43,22 @@
     height: 158px;
     background-image: url("../img/page-header/sedona-simple.svg"), url("../img/page-header/triangle.svg"), url("../img/page-header/background-photo.jpg");
     background-size: 229px 39px, auto, cover;
-    background-position: 49% 44%, 50% 100%, center 29%;
+    background-position: 49% 44%, 50% 100.2%, center 29%;
 
     position: relative;
     background-repeat: no-repeat, no-repeat;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 57px;
+    background-color: @white;
+    left: 0;
+    bottom: 0;
+    clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 50% 100%, 0% 0%);
+    margin-bottom: -1px;
   }
 }
 
@@ -54,11 +66,35 @@
   .page-header__welcome-banner {
     height: 518px;
     background-size: 461px 350px, auto, cover;
-    background-position: center 47%, 50% 100%, center 31%;
+    background-position: center 47%, 50% 100.2%, center 31%;
+
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      height: 57px;
+      bottom: -1px;
+      background-color: @white;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      /*clip-path: polygon(0% 100%, 100% 100%, 100% 36.85%, 95.9% 40.35%, 95.9% 0%, 50% 100%, 4.1% 0%, 4.1% 40.35%, 0% 36.85%);*/
+      clip-path: polygon(0% 100%, 100% 100%, 100% 36.85%, 50% 100%, 0% 36.85%);
+    }
+
+    &::before {
+      width: 700px;
+      left: 50%;
+      clip-path: polygon(0% 100%, 100% 100%, 100% 0%, 50% 100%, 0% 0%);
+      transform: translateX(-50%);
+    }
 
     &--simple {
       height: 290px;
-      background-position: center 67%, 50% 100%, center 29%;
+      background-position: center 67%, 50% 100.2%, center 29%;
     }
 
     &--form {
