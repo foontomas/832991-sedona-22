@@ -1,0 +1,779 @@
+.form {
+  padding-top: 20px;
+  padding-bottom: 48px;
+  border-top: 1px solid @fieldset-border;
+
+  @media (min-width: @tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "impression introdution" "contacts contacts" "sights sights" "emotions emotions" "button button";
+  }
+}
+
+.form__fieldset {
+  border: none;
+  border-bottom: 1px solid @fieldset-border;
+}
+
+.form__legend {
+  font-weight: 700;
+  line-height: 26px;
+  font-size: 18px;
+  color: @simple-black;
+}
+
+.form__fieldset--introdution {
+  padding-bottom: 20px;
+  margin-bottom: 19px;
+  padding-right: 19px;
+  border-bottom: 1px solid @fieldset-border;
+
+  @media (min-width: @tablet-width) {
+    order: 2;
+    grid-area: introdution;
+    padding-left: 50px;
+    padding-right: 57px;
+  }
+}
+
+.form__fieldset--introdution .form__legend {
+  text-align: center;
+  margin-bottom: 15px;
+  padding-left: 11px;
+}
+
+.form__fieldset--contact-info {
+  padding-top: 0;
+  padding-right: 18px;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+
+  @media (min-width: @tablet-width) {
+    order: 3;
+    grid-area: contacts;
+  }
+}
+
+.form__fieldset--contact-info .form__legend {
+  margin-bottom: 17px;
+  padding-left: 9px;
+}
+
+.form__fieldset--impression {
+  padding-top: 0;
+  padding-bottom: 25px;
+  margin-bottom: 16px;
+
+  @media (min-width: @tablet-width) {
+    order: 1;
+    grid-area: impression;
+  }
+}
+
+.form__fieldset--sights .form__legend {
+  padding-right: 5px;
+  margin-bottom: 21px;
+}
+
+.form__fieldset--impression .form__legend {
+  margin-bottom: 20px;
+}
+
+.form__fieldset--contact-info .form__label,
+.form__fieldset--introdution .form__label,
+.form__p {
+  line-height: 26px;
+  font-size: 14px;
+}
+
+.form__fieldset--introdution .form__label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 21px;
+  margin-left: 7px;
+
+  &:nth-child(3) {
+    margin-bottom: 20px;
+  }
+
+  &:nth-child(4) {
+    margin-bottom: 3px;
+  }
+}
+
+.form__fieldset--contact-info .form__text-input,
+.form__fieldset--introdution .form__text-input {
+  height: 58px;
+  background-color: @form-input-back;
+  border: none;
+  color: @simple-black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: none;
+  font-family: "PT Sans", "Arial", sans-serif;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-left: 21px;
+  margin-left: 14px;
+}
+
+.form__fieldset--introdution .form__text-input--intro3 {
+  margin-left: 15px;
+  padding-left: 23px;
+}
+
+.form__fieldset--contact-info .form__text-input {
+  box-sizing: border-box;
+  margin-top: 5px;
+  margin-bottom: 14px;
+  padding-left: 22px;
+  margin-left: 7px;
+  padding-top: 4px;
+}
+
+.form__textarea::placeholder,
+.form__text-input::placeholder {
+  color: @simple-black;
+}
+
+.form__textarea:hover,
+.form__text-input:hover {
+  background-color: @fieldset-border;
+}
+
+.form__textarea:focus,
+.form__textarea:active,
+.form__text-input:focus,
+.form__text-input:active {
+  background-color: @white;
+  outline: 4px solid @fieldset-border;
+  outline-offset: -4px;
+  border: none;
+}
+
+.form__input-cover {
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.data-input {
+  height: 38px;
+}
+
+.form__fieldset--contact-info .form__label {
+  display: flex;
+  align-items: flex-start;
+  padding-left: 30px;
+  margin-bottom: 4px;
+
+  &--email {
+    margin-bottom: -1px;
+    padding-left: 28px;
+  }
+}
+
+.form__icon {
+  width: 58px;
+  height: 58px;
+  background-color: @input-icons;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 5px;
+  margin-bottom: 14px;
+  flex: none;
+}
+
+.form__text-input--phone ~ .form__icon {
+  background-image: url("../img/form/phone.svg");
+}
+
+.form__text-input--email ~ .form__icon {
+  background-image: url("../img/form/mail.svg");
+}
+
+.form__fieldset--sights {
+  padding-top: 0;
+  padding-bottom: 24px;
+  margin-bottom: 20px;
+}
+
+.form__fieldset--choice .form__label {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.form__fieldset--impression .form__label {
+  margin-bottom: 11px;
+  padding-left: 6px;
+  color: @simple-black;
+
+
+  &:nth-child(4) {
+    margin-bottom: 0;
+  }
+}
+
+.form__fieldset--sights .form__label {
+  margin-bottom: 24px;
+  padding-left: 7px;
+  color: @simple-black;
+
+  &:nth-child(5) {
+    margin-bottom: 0;
+  }
+}
+
+.form__fieldset--emotions {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 45px;
+  padding-left: 17px;
+  padding-right: 19px;
+
+  @media (min-width: @tablet-width) {
+    order: 5;
+    grid-area: emotions;
+  }
+}
+
+.form__fieldset--emotions .form__legend {
+  margin-bottom: 15px;
+}
+
+.form__fieldset--emotions .form__textarea {
+  width: 100%;
+  min-width: 279px;
+  height: 160px;
+  background-color: @form-input-back;
+  color: @simple-black;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: none;
+  font-family: "PT Sans", "Arial", sans-serif;
+  border: none;
+  resize: none;
+  padding: 13px 23px 29px 21px;
+  box-sizing: border-box;
+}
+
+.form__button {
+  background-color: @blue-back;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: @white;
+  width: 280px;
+  height: 58px;
+  padding-top: 7px;
+  margin-right: 4px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  border: none;
+}
+
+.form__button:hover,
+.form__button:focus {
+  background-color: @mobile-nav-hover;
+  outline: none;
+  border: none;
+}
+
+.form__button:active {
+  background-color: @mobile-nav-active;
+  color: rgba(255, 255, 255, 0.3);
+  outline: none;
+  border: none;
+}
+
+.form__button:disabled {
+  background-color: @fieldset-border;
+}
+
+.form__button-bar {
+  @media (min-width: @tablet-width) {
+    order: 6;
+    grid-area: button;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+
+.form__fieldset:nth-child(5) {
+  border-bottom: none;
+}
+
+.form__fieldset--sights input[type="checkbox"],
+.form__fieldset--impression input[type="radio"] {
+  display: none;
+}
+
+.form__fieldset--impression input[type="radio"] ~ .form__span {
+  display: inline-block;
+  vertical-align: bottom;
+  background-repeat: no-repeat;
+  background-color: @form-input-back;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  margin-right: 20px;
+  border: 5px solid @form-input-back;
+}
+
+.form__fieldset--impression input[type="radio"]:checked ~ .form__span {
+  background-image: url("../img/form/dot.svg");
+  background-position: center;
+}
+
+.form__fieldset--impression input[type="radio"]:checked:active ~ .form__span {
+  background-image: url("../img/form/dot-grey.svg");
+  background-position: center;
+  background-color: @checkbox-active;
+  border: 5px solid @checkbox-active;
+}
+
+.form__fieldset--impression input[type="radio"]:hover ~ .form__span {
+  background-color: @fieldset-border;
+  border: 5px solid @fieldset-border;
+}
+
+.form__fieldset--impression input[type="radio"]:active ~ .form__span {
+  background-image: url("../img/form/dot-grey.svg");
+  background-position: center;
+  background-color: @checkbox-active;
+  border: 5px solid  @checkbox-active;
+}
+
+
+.form__fieldset--sights input[type="checkbox"] ~ .form__span {
+  display: inline-block;
+  vertical-align: bottom;
+  background-repeat: no-repeat;
+  background-color: @form-input-back;
+  width: 46px;
+  height: 46px;
+  margin-right: 23px;
+  border: 5px solid @form-input-back;
+  border-radius: 10%;
+}
+
+.form__fieldset--sights input[type="checkbox"]:checked ~ .form__span {
+  background-image: url("../img/form/tick.svg");
+  background-position: center;
+}
+
+.form__fieldset--sights input[type="checkbox"]:checked:active ~ .form__span {
+  background-image: url("../img/form/tick-grey.svg");
+  background-position: center;
+  background-color: @checkbox-active;
+  border: 5px solid @checkbox-active;
+}
+
+.form__fieldset--sights input[type="checkbox"]:hover ~ .form__span {
+  background-color: @fieldset-border;
+  border: 5px solid @fieldset-border;
+}
+
+.form__fieldset--sights input[type="checkbox"]:active ~ .form__span {
+  background-image: url("../img/form/tick-grey.svg");
+  background-position: center;
+  background-color: @checkbox-active;
+  border: 5px solid  @checkbox-active;
+}
+
+@media (max-width: @mobile-width-only) {
+  .form__p {
+    display: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .form__fieldset--sights {
+    order: 4;
+    grid-area: sights;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 461px;
+    margin: 0 auto;
+    padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 45px;
+    position: relative;
+    border-bottom: none;
+
+    &::after {
+      content: "";
+      height: 1px;
+      width: 123px;
+      position: absolute;
+      background-color: @vertical-border;
+      right: -94px;
+      top: -55px;
+      z-index: 5;
+    }
+
+    &::before {
+      content: "";
+      height: 1px;
+      width: 123px;
+      position: absolute;
+      background-color: @vertical-border;
+      left: -94px;
+      top: -55px;
+      z-index: 5;
+    }
+  }
+
+  .form__fieldset--sights .form__legend {
+    text-align: center;
+    padding-right: 25px;
+    margin-bottom: 44px;
+    padding-left: 24px;
+    padding-top: 3px;
+  }
+
+  .form__fieldset--sights .form__label {
+    min-width: 200px;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    margin-bottom: 32px;
+    padding-left: 0;
+  }
+
+  .form__fieldset--sights .form__label:nth-child(2) {
+    margin-left: 2px;
+    margin-right: 58px;
+  }
+
+  .form__fieldset--sights .form__label:nth-child(4) {
+    margin-left: 2px;
+    margin-right: 58px;
+    margin-bottom: 0;
+  }
+
+  .form__legend {
+    font-size: 21px;
+  }
+
+  .form__fieldset--impression .form__legend,
+  .form__fieldset--introdution .form__legend {
+    text-align: start;
+    padding-left: 8px;
+    padding-top: 27px;
+    margin-bottom: 55px;
+  }
+
+  .form__fieldset--impression {
+    padding-left: 49px;
+    border: none;
+    position: relative;
+  }
+
+  .form__fieldset--introdution {
+    border: none;
+  }
+
+  .form__fieldset--impression .form__label {
+    margin-bottom: 20px;
+    padding-left: 6px;
+
+    &:nth-child(4) {
+      margin-bottom: 0;
+    }
+  }
+
+  .form__fieldset--introdution .form__legend {
+    padding-left: 6px;
+    margin-bottom: 50px;
+  }
+
+  .form__fieldset--impression::after {
+    content: "";
+    height: 292px;
+    width: 1px;
+    position: absolute;
+    background-color: @vertical-border;
+    right: 0;
+    top: -75px;
+    z-index: 5;
+  }
+
+  .form__fieldset--contact-info {
+    padding-left: 51px;
+    padding-right: 57px;
+    position: relative;
+    border-bottom: none;
+    margin-bottom: 21px;
+  }
+
+  .form__fieldset--contact-info .form__legend {
+    padding-top: 29px;
+    margin-bottom: 19px;
+    padding-left: 7px;
+
+    &::after {
+      content: "";
+      height: 1px;
+      width: 123px;
+      position: absolute;
+      background-color: @vertical-border;
+      right: 60px;
+      top: 40px;
+      z-index: 5;
+    }
+
+    &::before {
+      content: "";
+      height: 1px;
+      width: 123px;
+      position: absolute;
+      background-color: @vertical-border;
+      left: 60px;
+      top: 40px;
+      z-index: 5;
+    }
+  }
+
+  .form__fieldset--contact-info .form__input-cover--phone {
+    margin-bottom: 11px;
+  }
+
+  .form__fieldset--emotions .form__legend {
+    margin-bottom: 55px;
+  }
+
+  .form__fieldset--emotions {
+    padding-left: 58px;
+    padding-right: 59px;
+    margin-bottom: 53px;
+    position: relative;
+
+    &::after {
+      content: "";
+      height: 1px;
+      width: 123px;
+      position: absolute;
+      background-color: @vertical-border;
+      right: 58px;
+      top: -65px;
+      z-index: 5;
+    }
+
+    &::before {
+      content: "";
+      height: 1px;
+      width: 123px;
+      position: absolute;
+      background-color: @vertical-border;
+      left: 61px;
+      top: -65px;
+      z-index: 5;
+    }
+  }
+
+  .form__fieldset--emotions .form__textarea {
+    padding-top: 18px;
+  }
+
+  .form__button-bar .form__p {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 21px;
+  }
+
+  .form__button {
+    width: 324px;
+    padding-left: 0;
+  }
+
+  .form__button-bar {
+    margin-bottom: 15px;
+  }
+
+  .form {
+    border-top: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form__fieldset--contact-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-bottom: 10px;
+  }
+
+  .form__fieldset--contact-info .form__label {
+    width: 9.5%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+    padding-right: 5px;
+    margin-right: 5px;
+
+    &--email {
+      width: 18.4%;
+      padding-right: 6px;
+      padding-left: 26px;
+    }
+  }
+
+  .form__fieldset--contact-info :nth-child(3) {
+    justify-content: flex-end;
+  }
+
+  .form__fieldset--contact-info .form__text-input {
+    width: 257px;
+  }
+
+  .form__fieldset--impression .form__legend {
+    padding-top: 25px;
+    padding-left: 84px;
+  }
+
+  .form__fieldset--impression {
+    padding-left: 113px;
+  }
+
+  .form__fieldset--introdution {
+    padding-left: 71px;
+    padding-right: 120px;
+  }
+
+  .form__fieldset--introdution .form__legend {
+    padding-top: 25px;
+  }
+
+  .form__fieldset--impression,
+  .form__fieldset--introdution {
+    padding-bottom: 16px;
+  }
+
+  .form__fieldset--contact-info .form__legend {
+    padding-top: 31px;
+    margin-bottom: 65px;
+  }
+
+  .form__label--desktop-label {
+    display: none;
+  }
+
+  .form__fieldset--contact-info .form__text-input--email,
+  .form__text-input--email ~ .form__icon {
+    margin-top: 0;
+    margin-bottom: 16px;
+  }
+
+  .form__fieldset--sights {
+    width: 960px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 119px;
+    margin-bottom: 44px;
+  }
+
+  .form__fieldset--sights .form__legend {
+    width: 270px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .form__fieldset--sights .form__label:nth-child(2) {
+    margin-right: 59px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .form__fieldset--sights .form__label:nth-child(3) {
+    margin-right: 57px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .form__fieldset--sights .form__label:nth-child(4) {
+    margin-right: 38px;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .form__fieldset--sights .form__label:nth-child(5) {
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+  }
+
+  .form__fieldset--sights input[type="checkbox"] ~ .form__span {
+    margin-right: 26px;
+  }
+
+  .form__fieldset--emotions {
+    padding-left: 117px;
+    padding-right: 119px;
+  }
+
+  .form__button {
+    width: 480px;
+    margin-top: 0;
+    padding-top: 3px;
+    padding-left: 9px;
+  }
+
+  .form__button-bar {
+    padding-left: 117px;
+    margin-bottom: 18px;
+  }
+
+  .form__button-bar .form__p {
+    padding-top: 17px;
+    padding-right: 62px;
+  }
+
+  .form__fieldset--contact-info .form__legend::before {
+    left: 118px;
+    top: 40px;
+    width: 280px;
+  }
+
+  .form__fieldset--contact-info .form__legend::after {
+    right: 119px;
+    top: 40px;
+    width: 280px;
+  }
+
+  .form__fieldset--sights::before {
+    left: 120px;
+    width: 280px;
+  }
+
+  .form__fieldset--sights::after {
+    right: -2px;
+    width: 280px;
+  }
+
+  .form__fieldset--emotions::before {
+    left: 118px;
+    width: 280px;
+  }
+
+  .form__fieldset--emotions::after {
+    right: 119px;
+    width: 280px;
+  }
+}
