@@ -1,0 +1,140 @@
+.modal {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  z-index: 5;
+  position: fixed;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+  background-color: @white;
+  transform: translate(-50%, -50%);
+}
+
+.modal-block {
+
+  padding: 0 42px;
+
+  &--success {
+    padding-top: 47px;
+    padding-right: 39px;
+    padding-left: 39px;
+    margin-bottom: 34px;
+  }
+
+  &--failure {
+    padding-top: 42px;
+    margin-bottom: 23px;
+  }
+}
+
+.modal__description {
+  font-size: 14px;
+  line-height: 24px;
+  color: @ordinary-text;
+  margin: 0;
+}
+
+.modal__success-close {
+  width: 280px;
+  background-color: @form-input-back;
+  padding: 20px;
+}
+
+.modal__failure-close {
+  padding-bottom: 35px;
+}
+
+.modal__button {
+  background-color: @blue-back;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: @white;
+  width: 280px;
+  height: 58px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  border: none;
+  margin: 0 auto;
+  cursor: pointer;
+
+  &--success {
+    width: 280px;
+  }
+
+  &--failure {
+    width: 180px;
+  }
+}
+
+.modal__open {
+  display: block;
+}
+
+.modal--close {
+  display: none;
+}
+
+
+@media (min-width: @tablet-width) {
+  .modal--success {
+    width: 640px;
+  }
+
+  .modal--failure {
+    width: 400px;
+  }
+
+  .modal__block--success {
+    margin-bottom: 34px;
+    padding-top: 62px;
+  }
+
+  .modal__success-close {
+    width: 100%;
+    padding: 44px 91px;
+    box-sizing: border-box;
+  }
+
+  .modal__block {
+    padding: 0 17%;
+  }
+
+  .modal__block--failure {
+    margin-bottom: 33px;
+    padding: 55px 14% 0 14%;
+  }
+
+  .modal__failure-close {
+    padding-bottom: 49px;
+  }
+
+  .modal__block--failure .modal__title--failure {
+    margin-bottom: 24px;
+    line-height: 40px;
+  }
+
+  .modal__title {
+    margin-bottom: 31px;
+    font-size: 30px;
+  }
+
+  .modal__title--failure {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+
+  .modal__button {
+    font-size: 21px;
+  }
+
+  .modal__button--success {
+    width: 458px;
+  }
+
+  .modal__button--failure {
+    width: 272px;
+  }
+}
