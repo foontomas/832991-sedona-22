@@ -4,253 +4,254 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
-    <header class="page-header">
-      <a class="page-header__logo">
-              <picture>
-                <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-                <img src="img/logotype.svg" width="102" height="84" alt="Логотип города Седона.">
-              </picture>
-            </a>
-      <nav class="main-nav main-nav--closed main-nav--nojs" aria-label="навигация по сайту">
-        <ul class="nav-list">
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="index.html">
-              главная
-            </a>
-          </li>
-          <li class="nav-list__item nav-list__item--active">
-            <a class="nav-list__link">
+    <div class="body__container">
+      <header class="page-header">
+        <a class="page-header__logo">
+                <picture>
+                  <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+                  <img class="page-header__logo-image" src="img/logotype.svg" width="102px" height="84px" alt="Логотип города Седона.">
+                </picture>
+              </a>
+        <nav class="main-nav main-nav--opened main-nav--nojs" aria-label="навигация по сайту">
+          <ul class="nav-list">
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="index.html">
+                главная
+              </a>
+            </li>
+            <li class="nav-list__item nav-list__item--active">
+              <a class="nav-list__link">
+                фото и видео
+              </a>
+            </li>
+            <li class="nav-list__item ">
+              <a class="nav-list__link" href="form.html">
+                форма отзыва
+              </a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link" href="https://htmlacademy.ru">
+                html academy
+              </a>
+            </li>
+          </ul>
+          <div class="main-nav__toggle-bar">
+            <button class="main-nav__toggle" type="button">
+              <span class="visually-hidden">
+                Открыть меню
+              </span>
+            </button>
+          </div>
+        </nav>
+        <div class="page-header__welcome-banner page-header__welcome-banner--simple">
+          <!--<picture>
+          </picture>-->
+        </div>
+      </header>
+      <main class="page-main">
+        <h1 class="visually-hidden">
+          Туристическая страница города Седона, штат Аризона
+        </h1>
+        <section class="intro">
+          <h2 class="visually-hidden">
+            Приветственный баннер города Седона
+          </h2>
+          <div class="intro__declare intro__declare--catalog offer">
+            <h3 class="intro__h3">
               фото и видео
-            </a>
-          </li>
-          <li class="nav-list__item ">
-            <a class="nav-list__link" href="form.html">
-              форма отзыва
-            </a>
-          </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link" href="https://htmlacademy.ru">
-              html academy
-            </a>
-          </li>
-        </ul>
-        <div class="main-nav__toggle-bar">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">
-              Открыть меню
-            </span>
-          </button>
-        </div>
-      </nav>
-      <div class="page-header__welcome-banner page-header__welcome-banner--simple">
-        <!--<picture>
-        </picture>-->
-      </div>
-    </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">
-        Туристическая страница города Седона, штат Аризона
-      </h1>
-      <section class="intro">
-        <h2 class="visually-hidden">
-          Приветственный баннер города Седона
-        </h2>
-        <div class="intro__declare intro__declare--catalog offer">
-          <h3 class="intro__h3">
-            фото и видео
-          </h3>
-          <p class="intro__p">
-            не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.
-          </p>
-        </div>
-      </section>
-      <section class="photo-stream">
-        <h2 class="visually-hidden">
-          лента фотографий города Седона
-        </h2>
-        <ul class="photo-stream__list">
-          <li class="photo-stream__item photo-stream__item--1">
-            <!--<img class="photo-stream__image" src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">-->
-            <picture class="photo-stream__picture">
-              <source media="(min-width: 1200px)" srcset="img/photo-1-desktop.jpg 1x, img/photo-1-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-1-tablet.jpg 1x, img/photo-1-tablet@2x.jpg 2x">
-              <img class="photo-stream__image" src="img/photo-1-mobile.jpg" srcset="img/photo-1-mobile@2x.jpg 2x" alt="пейзажная фотография окрестностей Седоны" width="100%" height="100%">
-            </picture>
-            <div class="photo-stream__text-block, text-block">
-              <div class="text-block__wrapper">
-                <h3 class="text-block__h3">
-                  неродные просторы
-                </h3>
-                <p class="text-block__author-name">
-                  Автор фото: Борис
+            </h3>
+            <p class="intro__p">
+              не можете решиться на путешествие из-за курса? фотографии помогут вам забыть о политике и экономике.
+            </p>
+          </div>
+        </section>
+        <section class="photo-stream">
+          <h2 class="visually-hidden">
+            лента фотографий города Седона
+          </h2>
+          <ul class="photo-stream__list">
+            <li class="photo-stream__item photo-stream__item--1">
+              <!--<img class="photo-stream__image" src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">-->
+              <picture class="photo-stream__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-stream/photo-1-desktop.jpg 1x, img/photo-stream/photo-1-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-stream/photo-1-tablet.jpg 1x, img/photo-stream/photo-1-tablet@2x.jpg 2x">
+                <img class="photo-stream__image" src="img/photo-stream/photo-1-mobile.jpg" srcset="img/photo-stream/photo-1-mobile@2x.jpg 2x" alt="пейзажная фотография окрестностей Седоны" width="100%" height="100%">
+              </picture>
+              <div class="photo-stream__text-block, text-block">
+                <div class="text-block__wrapper">
+                  <h3 class="text-block__h3">
+                    неродные просторы
+                  </h3>
+                  <p class="text-block__author-name">
+                    Автор фото: Борис
+                  </p>
+                </div>
+                <p class="text-block__likes-counter">
+                  1350
                 </p>
               </div>
-              <p class="text-block__likes-counter">
-                1350
-              </p>
-            </div>
-          </li>
-          <li class="photo-stream__item photo-stream__item--2">
-            <picture class="photo-stream__picture">
-              <source media="(min-width: 1200px)" srcset="img/photo-2-desktop.jpg 1x, img/photo-2-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-2-tablet.jpg 1x, img/photo-2-tablet@2x.jpg 2x">
-              <img class="photo-stream__image" src="img/photo-2-mobile.jpg" srcset="img/photo-2-mobile@2x.jpg 2x" alt="пейзажная фотография окрестностей Седоны" width="100%" height="100%">
-            </picture>
-            <!--<img src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">-->
-            <div class="photo-stream__text-block text-block">
-              <div class="text-block__wrapper">
-                <h3 class="text-block__h3">
-                  местная растительность
-                </h3>
-                <p class="text-block__author-name">
-                  Автор фото: Сергей
+            </li>
+            <li class="photo-stream__item photo-stream__item--2">
+              <picture class="photo-stream__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-stream/photo-2-desktop.jpg 1x, img/photo-stream/photo-2-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-stream/photo-2-tablet.jpg 1x, img/photo-stream/photo-2-tablet@2x.jpg 2x">
+                <img class="photo-stream__image" src="img/photo-stream/photo-2-mobile.jpg" srcset="img/photo-stream/photo-2-mobile@2x.jpg 2x" alt="пейзажная фотография окрестностей Седоны" width="100%" height="100%">
+              </picture>
+              <!--<img src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">-->
+              <div class="photo-stream__text-block text-block">
+                <div class="text-block__wrapper">
+                  <h3 class="text-block__h3">
+                    местная растительность
+                  </h3>
+                  <p class="text-block__author-name">
+                    Автор фото: Сергей
+                  </p>
+                </div>
+                <p class="text-block__likes-counter">
+                  143
                 </p>
               </div>
-              <p class="text-block__likes-counter">
-                143
-              </p>
-            </div>
-          </li>
-          <li class="photo-stream__item photo-stream__item--3">
-            <picture class="photo-stream__picture">
-              <source media="(min-width: 1200px)" srcset="img/photo-3-desktop.jpg 1x, img/photo-3-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-3-tablet.jpg 1x, img/photo-3-tablet@2x.jpg 2x">
-              <img class="photo-stream__image" src="img/photo-3-mobile.jpg" srcset="img/photo-3-mobile@2x.jpg 2x" alt="пейзажная фотография окрестностей Седоны" width="100%" height="100%">
-            </picture>
-            <!--<img src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">-->
-            <div class="photo-stream__text-block text-block">
-              <div class="text-block__wrapper">
-                <h3 class="text-block__h3">
-                  дорога на север
-                </h3>
-                <p class="text-block__author-name">
-                  Автор фото: Петр
+            </li>
+            <li class="photo-stream__item photo-stream__item--3">
+              <picture class="photo-stream__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-stream/photo-3-desktop.jpg 1x, img/photo-stream/photo-3-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-stream/photo-3-tablet.jpg 1x, img/photo-stream/photo-3-tablet@2x.jpg 2x">
+                <img class="photo-stream__image" src="img/photo-stream/photo-3-mobile.jpg" srcset="img/photo-stream/photo-3-mobile@2x.jpg 2x" alt="пейзажная фотография окрестностей Седоны" width="100%" height="100%">
+              </picture>
+              <!--<img src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">-->
+              <div class="photo-stream__text-block text-block">
+                <div class="text-block__wrapper">
+                  <h3 class="text-block__h3">
+                    дорога на север
+                  </h3>
+                  <p class="text-block__author-name">
+                    Автор фото: Петр
+                  </p>
+                </div>
+                <p class="text-block__likes-counter">
+                  96
                 </p>
               </div>
-              <p class="text-block__likes-counter">
-                96
-              </p>
-            </div>
-          </li>
-          <li class="photo-stream__item photo-stream__item--4">
-            <picture class="photo-stream__picture">
-              <source media="(min-width: 1200px)" srcset="img/photo-4-desktop.jpg 1x, img/photo-4-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-4-tablet.jpg 1x, img/photo-4-tablet@2x.jpg 2x">
-              <img class="photo-stream__image" src="img/photo-4-mobile.jpg" srcset="img/photo-4-mobile@2x.jpg 2x" alt="пейзажная фотография окрестностей Седоны" width="100%" height="100%">
-            </picture>
-            <!--<img src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">-->
-            <div class="photo-stream__text-block, text-block">
-              <div class="text-block__wrapper">
-                <h3 class="text-block__h3">
-                  мост дъявола
-                </h3>
-                <p class="text-block__author-name">
-                  Автор фото: Антон
+            </li>
+            <li class="photo-stream__item photo-stream__item--4">
+              <picture class="photo-stream__picture">
+                <source media="(min-width: 1200px)" srcset="img/photo-stream/photo-4-desktop.jpg 1x, img/photo-stream/photo-4-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-stream/photo-4-tablet.jpg 1x, img/photo-stream/photo-4-tablet@2x.jpg 2x">
+                <img class="photo-stream__image" src="img/photo-stream/photo-4-mobile.jpg" srcset="img/photo-stream/photo-4-mobile@2x.jpg 2x" alt="пейзажная фотография окрестностей Седоны" width="100%" height="100%">
+              </picture>
+              <!--<img src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">-->
+              <div class="photo-stream__text-block, text-block">
+                <div class="text-block__wrapper">
+                  <h3 class="text-block__h3">
+                    мост дъявола
+                  </h3>
+                  <p class="text-block__author-name">
+                    Автор фото: Антон
+                  </p>
+                </div>
+                <p class="text-block__likes-counter">
+                  254
                 </p>
               </div>
-              <p class="text-block__likes-counter">
-                254
-              </p>
-            </div>
-          </li>
-        </ul>
+            </li>
+          </ul>
 
-      </section>
-      <section class="video-section">
-        <div class="video-section__title offer">
-          <h3 class="video-section__h3">
-            все еще сомневаетесь?
-          </h3>
-          <p class="video-section__p">
-            Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
-          </p>
-        </div>
-        <video class="video-section__content" loop muted poster="./img/video.jpg">
-          <source src="#" type="video/mp4">
-          <source src="#" type="video/webm">
-          <p>Ваш браузер не поддерживает HTML5 видео. Для просмотра используйте
-            <a href="#">
-              ссылку на это видео
-            </a>
-            .
-          </p>
-        </video>
-        <div class="video-section__range-filter">
-          <div class="video-section__range-controls">
-            <div class="video-section__progress">
+        </section>
+        <section class="video-section">
+          <div class="video-section__title offer">
+            <h3 class="video-section__h3">
+              все еще сомневаетесь?
+            </h3>
+            <p class="video-section__p">
+              Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!
+            </p>
+          </div>
+          <video class="video-section__content" loop muted poster="./img/video.jpg">
+            <source src="#" type="video/mp4">
+            <source src="#" type="video/webm">
+            <p>Ваш браузер не поддерживает HTML5 видео. Для просмотра используйте
+              <a href="#">
+                ссылку на это видео
+              </a>
+              .
+            </p>
+          </video>
+          <div class="video-section__range-filter">
+            <div class="video-section__range-controls">
+              <div class="video-section__progress">
+              </div>
+              <div class="video-section__video-toggle">
+              </div>
             </div>
-            <div class="video-section__video-toggle">
+            <div class="video-section__video-options">
+              <button class="video-section__option video-section__option--replay" type="button" aria-label="В начало видео" title="В начало">
+                <svg class="video-section__video-icon video-section__video-icon--replay" fill="#000000" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="20px" viewBox="0 0 16 20" enable-background="new 0 0 16 20" xml:space="preserve">
+                  <path d="M8,4V0L3,5l5,5V6c3.315,0,6,2.686,6,6s-2.685,6-6,6s-6-2.686-6-6H0c0,4.42,3.58,8,8,8s8-3.58,8-8S12.42,4,8,4z"/>
+                </svg>
+              </button>
+              <button class="video-section__option video-section__option--subtitles" type="button" aria-label="Включить субтитры" title="Включить субтитры">
+                <svg class="video-section__video-icon video-section__video-icon--subtitles" fill="#000000" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="20px" viewBox="0 0 32 20" enable-background="new 0 0 32 20" xml:space="preserve">
+                  <path d="M29,0H3C1.35,0,0,1.35,0,3v14c0,1.65,1.35,3,3,3h26c1.65,0,3-1.35,3-3V3C32,1.35,30.65,0,29,0z M14.403,15.854c-0.545,0.108-1.104,0.164-1.678,0.164c-0.694,0-1.354-0.107-1.976-0.323c-0.623-0.214-1.172-0.562-1.646-1.041 s-0.852-1.103-1.133-1.868C7.69,12.02,7.551,11.091,7.551,10c0-1.134,0.157-2.085,0.471-2.851c0.315-0.768,0.723-1.384,1.224-1.854  c0.502-0.468,1.062-0.804,1.679-1.008c0.616-0.204,1.233-0.307,1.852-0.307c0.66,0,1.22,0.045,1.678,0.134  c0.457,0.087,0.835,0.192,1.133,0.313L15.14,6.347c-0.254-0.121-0.555-0.209-0.902-0.265C13.891,6.027,13.47,6,12.973,6 c-0.915,0-1.649,0.325-2.206,0.977c-0.558,0.651-0.836,1.663-0.836,3.031c0,0.598,0.067,1.142,0.199,1.632  c0.132,0.493,0.334,0.913,0.603,1.26c0.271,0.349,0.607,0.619,1.01,0.812c0.402,0.193,0.867,0.29,1.396,0.29  c0.496,0,0.915-0.049,1.257-0.148c0.342-0.099,0.639-0.227,0.893-0.38l0.463,1.841C15.398,15.564,14.949,15.745,14.403,15.854z   M23.101,15.854c-0.545,0.108-1.105,0.164-1.678,0.164c-0.694,0-1.354-0.107-1.976-0.323c-0.623-0.214-1.172-0.562-1.646-1.041  s-0.852-1.103-1.133-1.868c-0.281-0.767-0.421-1.695-0.421-2.786c0-1.134,0.157-2.085,0.471-2.851  c0.314-0.768,0.723-1.384,1.223-1.854c0.502-0.468,1.062-0.804,1.68-1.008c0.616-0.204,1.233-0.307,1.851-0.307 c0.661,0,1.221,0.045,1.678,0.134c0.458,0.087,0.836,0.192,1.133,0.313l-0.446,1.918c-0.253-0.121-0.554-0.209-0.901-0.265  C22.588,6.027,22.166,6,21.67,6c-0.915,0-1.649,0.325-2.206,0.977c-0.558,0.651-0.836,1.663-0.836,3.031  c0,0.598,0.067,1.142,0.199,1.632c0.132,0.493,0.334,0.913,0.603,1.26c0.271,0.349,0.606,0.619,1.009,0.812 c0.402,0.193,0.868,0.29,1.396,0.29c0.497,0,0.915-0.049,1.257-0.148c0.342-0.099,0.64-0.227,0.894-0.38l0.463,1.841  C24.096,15.564,23.646,15.745,23.101,15.854z"/>
+                </svg>
+              </button>
+              <button class="video-section__option video-section__option--fullscreen" type="button" aria-label="развернуть на весь экран" title="на весь экран">
+                <svg class="video-section__video-icon video-section__video-icon--fullscreen" xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+                  <g>
+                    <polygon points="0,0 0,3 0,6 3,6 3,3 6,3 6,0 3,0"/>
+                    <polygon points="3,14 0,14 0,17 0,20 3,20 6,20 6,17 3,17"/>
+                    <polygon points="17,0 14,0 14,3 17,3 17,6 20,6 20,3 20,0"/>
+                    <polygon points="17,17 14,17 14,20 17,20 20,20 20,17 20,14 17,14"/>
+                  </g>
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="video-section__video-options">
-            <button class="video-section__option video-section__option--replay" type="button" aria-label="В начало видео" title="В начало">
-              <svg class="video-section__video-icon video-section__video-icon--replay" fill="#000000" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="20px" viewBox="0 0 16 20" enable-background="new 0 0 16 20" xml:space="preserve">
-                <path d="M8,4V0L3,5l5,5V6c3.315,0,6,2.686,6,6s-2.685,6-6,6s-6-2.686-6-6H0c0,4.42,3.58,8,8,8s8-3.58,8-8S12.42,4,8,4z"/>
-              </svg>
-            </button>
-            <button class="video-section__option video-section__option--subtitles" type="button" aria-label="Включить субтитры" title="Включить субтитры">
-              <svg class="video-section__video-icon video-section__video-icon--subtitles" fill="#000000" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="20px" viewBox="0 0 32 20" enable-background="new 0 0 32 20" xml:space="preserve">
-                <path d="M29,0H3C1.35,0,0,1.35,0,3v14c0,1.65,1.35,3,3,3h26c1.65,0,3-1.35,3-3V3C32,1.35,30.65,0,29,0z M14.403,15.854c-0.545,0.108-1.104,0.164-1.678,0.164c-0.694,0-1.354-0.107-1.976-0.323c-0.623-0.214-1.172-0.562-1.646-1.041 s-0.852-1.103-1.133-1.868C7.69,12.02,7.551,11.091,7.551,10c0-1.134,0.157-2.085,0.471-2.851c0.315-0.768,0.723-1.384,1.224-1.854  c0.502-0.468,1.062-0.804,1.679-1.008c0.616-0.204,1.233-0.307,1.852-0.307c0.66,0,1.22,0.045,1.678,0.134  c0.457,0.087,0.835,0.192,1.133,0.313L15.14,6.347c-0.254-0.121-0.555-0.209-0.902-0.265C13.891,6.027,13.47,6,12.973,6 c-0.915,0-1.649,0.325-2.206,0.977c-0.558,0.651-0.836,1.663-0.836,3.031c0,0.598,0.067,1.142,0.199,1.632  c0.132,0.493,0.334,0.913,0.603,1.26c0.271,0.349,0.607,0.619,1.01,0.812c0.402,0.193,0.867,0.29,1.396,0.29  c0.496,0,0.915-0.049,1.257-0.148c0.342-0.099,0.639-0.227,0.893-0.38l0.463,1.841C15.398,15.564,14.949,15.745,14.403,15.854z   M23.101,15.854c-0.545,0.108-1.105,0.164-1.678,0.164c-0.694,0-1.354-0.107-1.976-0.323c-0.623-0.214-1.172-0.562-1.646-1.041  s-0.852-1.103-1.133-1.868c-0.281-0.767-0.421-1.695-0.421-2.786c0-1.134,0.157-2.085,0.471-2.851  c0.314-0.768,0.723-1.384,1.223-1.854c0.502-0.468,1.062-0.804,1.68-1.008c0.616-0.204,1.233-0.307,1.851-0.307 c0.661,0,1.221,0.045,1.678,0.134c0.458,0.087,0.836,0.192,1.133,0.313l-0.446,1.918c-0.253-0.121-0.554-0.209-0.901-0.265  C22.588,6.027,22.166,6,21.67,6c-0.915,0-1.649,0.325-2.206,0.977c-0.558,0.651-0.836,1.663-0.836,3.031  c0,0.598,0.067,1.142,0.199,1.632c0.132,0.493,0.334,0.913,0.603,1.26c0.271,0.349,0.606,0.619,1.009,0.812 c0.402,0.193,0.868,0.29,1.396,0.29c0.497,0,0.915-0.049,1.257-0.148c0.342-0.099,0.64-0.227,0.894-0.38l0.463,1.841  C24.096,15.564,23.646,15.745,23.101,15.854z"/>
-              </svg>
-            </button>
-            <button class="video-section__option video-section__option--fullscreen" type="button" aria-label="развернуть на весь экран" title="на весь экран">
-              <svg class="video-section__video-icon video-section__video-icon--fullscreen" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
-                <g>
-                  <polygon points="0,0 0,3 0,6 3,6 3,3 6,3 6,0 3,0"/>
-                  <polygon points="3,14 0,14 0,17 0,20 3,20 6,20 6,17 3,17"/>
-                  <polygon points="17,0 14,0 14,3 17,3 17,6 20,6 20,3 20,0"/>
-                  <polygon points="17,17 14,17 14,20 17,20 20,20 20,17 20,14 17,14"/>
-                </g>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </section>
-    </main>
-    <footer class="page-footer">
-      <p class="page-footer__p">
-        #visitsedona
-      </p>
-      <ul class="social-list">
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://twitter.com" aria-label="Блог в Twitter">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
-              <image width="17" height="15" overflow="visible" xlink:href="t.png"/>
-              <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://facebook.com" aria-label="Страница в Facebook">
-            <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
-              <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
-            </svg>
-          </a>
-        </li>
-        <li class="social-list__item">
-          <a class="social-list__link" href="https://youtube.com" aria-label="Страница в Youtube">
-            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
-              <image width="20" height="16" overflow="visible" xlink:href="youtube.png"/>
-              <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
-            </svg>
-          </a>
-        </li>
-      </ul>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text">
-          разработано
+        </section>
+      </main>
+      <footer class="page-footer">
+        <p class="page-footer__hashtag">
+          #visitsedona
         </p>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
-          <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
-          </svg>
-        </a>
-      </div>
-    </footer>
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://twitter.com" aria-label="Блог в Twitter">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15">
+                <path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://facebook.com" aria-label="Страница в Facebook">
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+                <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+              </svg>
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a class="social-list__link" href="https://youtube.com" aria-label="Страница в Youtube">
+              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="16" viewBox="0 0 20 16">
+                <path fill="#FFF" d="M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z"/>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">
+            разработано
+          </p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss" target="_blank">
+            <svg class="copyright__logo" width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.6 0H13.5L0 1.4V26.1L13.5 34.1L26.9 26.1V1.4L13.6 0ZM25 12.1L13.5 5.3V5.2H13.4L13.3 5.1V5.2L1.9 12.1V3.1L13.4 1.9L25 3.1V12.1ZM13.4 6.8L24.9 13.5L20.4 16.1L13.3 11.9V13.3L19.2 16.8L18.3 17.3L13.3 14.3V15.7L17.1 18L16.3 18.5L13.3 16.7V18.1L15.2 19.2L13.4 20.3L2 13.6L13.4 6.8ZM1.9 15.1L13.3 21.9V22.9L5.4 18.2V19.6L13.4 24.4V25.5L5.4 20.8V22.2L13.4 27L21.5 22.1V16.9L24.9 14.9V24.9L13.4 31.8L1.9 25V15.1Z" fill="black"/>
+            </svg>
+          </a>
+        </div>
+      </footer>
+    </div>
   </body>
 </html>
