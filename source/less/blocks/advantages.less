@@ -25,10 +25,11 @@
   height: 100%;
   text-align: center;
   display: block;
+  line-height: 0;
 
-  &--image-1 {
+  /*&--image-1 {
     margin-bottom: 35px;
-  }
+  }*/
 }
 
 .advantages__image img {
@@ -55,7 +56,7 @@
     padding-bottom: 35px;
 
     &--triangle {
-      padding-top: 73px;
+      padding-top: 71px;
       padding-bottom: 39px;
       background-image: url("../img/text-card-triangle.svg");
       background-repeat: no-repeat;
@@ -64,7 +65,7 @@
 
     &--additional {
       padding-top: 26px;
-      padding-bottom: 24px;
+      padding-bottom: 25px;
     }
   }
 
@@ -153,7 +154,7 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    grid-template-rows: 256px 330px 256px 256px;
+    //grid-template-rows: 256px 330px 256px 256px;
     grid-template-columns: 100%;
     justify-content: center;
   }
@@ -166,6 +167,10 @@
   .advantages__image {
     width: 66.666%;
     height: 256px;
+
+    &--image-1 {
+      margin-bottom: 0;
+    }
 
     &--image-2 {
       order: -1;
@@ -218,7 +223,7 @@
 
   .advantages__wrapper {
     width: 1200px;
-    grid-template-rows: 256px 330px 256px 256px;
+    //grid-template-rows: 256px 330px 256px 256px;
   }
 
   .advantages__image {
