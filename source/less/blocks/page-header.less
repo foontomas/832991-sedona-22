@@ -89,7 +89,6 @@
       content: "";
       position: absolute;
       width: 100%;
-      /*clip-path: polygon(0% 100%, 100% 100%, 100% 36.85%, 95.9% 40.35%, 95.9% 0%, 50% 100%, 4.1% 0%, 4.1% 40.35%, 0% 36.85%);*/
       clip-path: polygon(0% 100%, 100% 100%, 100% 36.85%, 50% 100%, 0% 36.85%);
     }
 
@@ -121,6 +120,10 @@
       height: 290px;
       background-image: url("../img/page-header/sedona-simple.svg"), url("../img/page-header/welcome-back-desktop.jpg");
       background-position: center 67%, center 29%;
+    }
+
+    &::after {
+      clip-path: polygon(0% 100%, 100% 100%, 100% -3.15%, 50% 100%, 0% -3.15%);
     }
   }
 }
