@@ -3,6 +3,10 @@
   padding-bottom: 48px;
   border-top: 1px solid @fieldset-border;
 
+  @media (max-width: @mobile-width-only) {
+    padding-top: 31px;
+  }
+
   @media (min-width: @tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -71,12 +75,12 @@
 }
 
 .form__fieldset--sights .form__legend {
-  padding-right: 5px;
-  margin-bottom: 21px;
+  padding-right: 4px;
+  margin-bottom: 20px;
 }
 
 .form__fieldset--impression .form__legend {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 
 .form__fieldset--contact-info .form__label,
@@ -90,7 +94,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 21px;
+  margin-bottom: 20px;
   margin-left: 7px;
 
   &:nth-child(3) {
@@ -116,7 +120,7 @@
   width: 100%;
   padding-top: 0;
   padding-bottom: 0;
-  padding-left: 21px;
+  padding-left: 22px;
   margin-left: 14px;
 }
 
@@ -247,6 +251,7 @@
 
 .form__fieldset--emotions .form__legend {
   margin-bottom: 15px;
+  padding-left: 7px;
 }
 
 .form__fieldset--emotions .form__textarea {
@@ -328,7 +333,7 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  margin-right: 20px;
+  margin-right: 21px;
   border: 5px solid @form-input-back;
 }
 
@@ -497,9 +502,28 @@
     }
   }
 
+  .form__fieldset--introdution .form__label {
+    margin-bottom: 19px;
+  }
+
   .form__fieldset--introdution .form__legend {
     padding-left: 6px;
     margin-bottom: 50px;
+  }
+
+  .form__fieldset--emotions .form__legend {
+    padding-left: 2px;
+    margin-bottom: 55px;
+  }
+
+  .form__fieldset--introdution .form__text-input {
+    padding-left: 21px;
+    padding-top: 1px;
+
+    &--intro3 {
+      padding-left: 22px;
+      padding-top: 0;
+    }
   }
 
   .form__fieldset--impression::after {
@@ -553,10 +577,6 @@
     margin-bottom: 11px;
   }
 
-  .form__fieldset--emotions .form__legend {
-    margin-bottom: 55px;
-  }
-
   .form__fieldset--emotions {
     padding-left: 58px;
     padding-right: 59px;
@@ -570,7 +590,7 @@
       position: absolute;
       background-color: @vertical-border;
       right: 58px;
-      top: -65px;
+      top: -71px;
       z-index: 5;
     }
 
@@ -581,7 +601,7 @@
       position: absolute;
       background-color: @vertical-border;
       left: 61px;
-      top: -65px;
+      top: -71px;
       z-index: 5;
     }
   }
