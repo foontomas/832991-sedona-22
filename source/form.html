@@ -4,7 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+    <!--<link rel="preload" href="css/styles.min.css" as="style">
+      <link rel="stylesheet" href="css/style.min.css">-->
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
     <div class="body__container">
@@ -12,7 +16,7 @@
         <a class="page-header__logo">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-                  <img class="page-header__logo-image" src="img/logotype.svg" width="102px" height="84px" alt="Логотип города Седона.">
+                  <img class="page-header__logo-image" src="img/logotype.svg" width="102" height="84" alt="Логотип города Седона.">
                 </picture>
               </a>
         <nav class="main-nav main-nav--opened main-nav--nojs" aria-label="навигация по сайту">
@@ -151,7 +155,7 @@
             <legend class="form__legend">
               опишите свои эмоции:
             </legend>
-            <textarea class="form__textarea" aria-label="Поле для впечатлений о поездке" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги" size="250" pattern="^[А-Яа-яЁё\s]+$"></textarea>
+            <textarea class="form__textarea" aria-label="Поле для впечатлений о поездке" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги" maxlength="250"></textarea>
           </fieldset>
           <div class="form__button-bar">
             <button class="form__button" type="submit">
@@ -234,8 +238,10 @@
           </button>
         </div>
       </section>
-      <script src="js/main.min.js">
+      <script src="js/navigation-menu.js">
       </script>
+      <!--<script src="js/main.min.js">
+      </script>-->
     </div>
   </body>
 </html>

@@ -4,7 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+    <!--<link rel="preload" href="css/styles.min.css" as="style">
+      <link rel="stylesheet" href="css/style.min.css">-->
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
     <div class="body__container">
@@ -12,7 +16,7 @@
         <a class="page-header__logo">
                 <picture>
                   <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-                  <img class="page-header__logo-image" src="img/logotype.svg" width="102px" height="84px" alt="Логотип города Седона.">
+                  <img class="page-header__logo-image" src="img/logotype.svg" width="102" height="84" alt="Логотип города Седона.">
                 </picture>
               </a>
         <nav class="main-nav main-nav--opened main-nav--nojs" aria-label="навигация по сайту">
@@ -76,9 +80,12 @@
             <li class="photo-stream__item photo-stream__item--sunsetroad">
               <!--<img class="photo-stream__image" src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">-->
               <picture class="photo-stream__picture">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-stream/photo-1-desktop@1x.webp 1x, img/photo-stream/photo-1-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-stream/photo-1-tablet@1x.webp 1x, img/photo-stream/photo-1-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-stream/photo-1-mobile@1x.webp 1x, img/photo-stream/photo-1-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo-stream/photo-1-desktop.jpg 1x, img/photo-stream/photo-1-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-stream/photo-1-tablet.jpg 1x, img/photo-stream/photo-1-tablet@2x.jpg 2x">
-                <img class="photo-stream__image" src="img/photo-stream/photo-1-mobile.jpg" srcset="img/photo-stream/photo-1-mobile@2x.jpg 2x" alt="фотография залитого закатным солнцем шоссе в окрестностях Седоны" width="100%" height="100%">
+                <img class="photo-stream__image" src="img/photo-stream/photo-1-mobile.jpg" srcset="img/photo-stream/photo-1-mobile@2x.jpg 2x" alt="фотография залитого закатным солнцем шоссе в окрестностях Седоны" width="280" height="280">
               </picture>
               <div class="photo-stream__text-block text-block">
                 <div class="text-block__wrapper">
@@ -96,9 +103,12 @@
             </li>
             <li class="photo-stream__item photo-stream__item--localplants">
               <picture class="photo-stream__picture">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-stream/photo-2-desktop@1x.webp 1x, img/photo-stream/photo-2-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-stream/photo-2-tablet@1x.webp 1x, img/photo-stream/photo-2-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-stream/photo-2-mobile@1x.webp 1x, img/photo-stream/photo-2-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo-stream/photo-2-desktop.jpg 1x, img/photo-stream/photo-2-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-stream/photo-2-tablet.jpg 1x, img/photo-stream/photo-2-tablet@2x.jpg 2x">
-                <img class="photo-stream__image" src="img/photo-stream/photo-2-mobile.jpg" srcset="img/photo-stream/photo-2-mobile@2x.jpg 2x" alt="фотография цветущего кактуса, представляющего растительность окрестностей Седоны" width="100%" height="100%">
+                <img class="photo-stream__image" src="img/photo-stream/photo-2-mobile.jpg" srcset="img/photo-stream/photo-2-mobile@2x.jpg 2x" alt="фотография цветущего кактуса, представляющего растительность окрестностей Седоны" width="280" height="280">
               </picture>
               <!--<img src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">-->
               <div class="photo-stream__text-block text-block">
@@ -117,9 +127,12 @@
             </li>
             <li class="photo-stream__item photo-stream__item--northroad">
               <picture class="photo-stream__picture">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-stream/photo-3-desktop@1x.webp 1x, img/photo-stream/photo-3-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-stream/photo-3-tablet@1x.webp 1x, img/photo-stream/photo-3-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-stream/photo-3-mobile@1x.webp 1x, img/photo-stream/photo-3-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo-stream/photo-3-desktop.jpg 1x, img/photo-stream/photo-3-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-stream/photo-3-tablet.jpg 1x, img/photo-stream/photo-3-tablet@2x.jpg 2x">
-                <img class="photo-stream__image" src="img/photo-stream/photo-3-mobile.jpg" srcset="img/photo-stream/photo-3-mobile@2x.jpg 2x" alt="фотография живописной дороги, севернее Седоны " width="100%" height="100%">
+                <img class="photo-stream__image" src="img/photo-stream/photo-3-mobile.jpg" srcset="img/photo-stream/photo-3-mobile@2x.jpg 2x" alt="фотография живописной дороги, севернее Седоны " width="280" height="280">
               </picture>
               <!--<img src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">-->
               <div class="photo-stream__text-block text-block">
@@ -138,9 +151,12 @@
             </li>
             <li class="photo-stream__item photo-stream__item--stonebridge">
               <picture class="photo-stream__picture">
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-stream/photo-4-desktop@1x.webp 1x, img/photo-stream/photo-4-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-stream/photo-4-tablet@1x.webp 1x, img/photo-stream/photo-4-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-stream/photo-4-mobile@1x.webp 1x, img/photo-stream/photo-4-mobile@2x.webp 2x">
                 <source media="(min-width: 1200px)" srcset="img/photo-stream/photo-4-desktop.jpg 1x, img/photo-stream/photo-4-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/photo-stream/photo-4-tablet.jpg 1x, img/photo-stream/photo-4-tablet@2x.jpg 2x">
-                <img class="photo-stream__image" src="img/photo-stream/photo-4-mobile.jpg" srcset="img/photo-stream/photo-4-mobile@2x.jpg 2x" alt="фотография каменного моста из красного песчаника в окрестностях Седоны" width="100%" height="100%">
+                <img class="photo-stream__image" src="img/photo-stream/photo-4-mobile.jpg" srcset="img/photo-stream/photo-4-mobile@2x.jpg 2x" alt="фотография каменного моста из красного песчаника в окрестностях Седоны" width="280" height="280">
               </picture>
               <!--<img src="#" alt="пейзажная фотография окрестностей Седоны" width="280px" height="280px">-->
               <div class="photo-stream__text-block text-block">
@@ -254,8 +270,10 @@
           </a>
         </div>
       </footer>
-      <script src="js/main.min.js">
+      <script src="js/navigation-menu.js">
       </script>
+      <!--<script src="js/main.min.js">
+      </script>-->
     </div>
   </body>
 </html>

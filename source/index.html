@@ -4,7 +4,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin="anonymous">
+    <!--<link rel="preload" href="css/styles.min.css" as="style">
+      <link rel="stylesheet" href="css/style.min.css">-->
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="body">
     <div class="body__container">
@@ -86,6 +90,9 @@
               </p>
             </div>
             <picture class="advantages__image advantages__image--image-1">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city-desktop@1x.webp 1x, img/photo-city-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-city-tablet@1x.webp 1x, img/photo-city-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-city-mobile@1x.webp 1x, img/photo-city-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/advantages/photo-city-desktop.jpg 1x, img/advantages/photo-city-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/advantages/photo-city-tablet.jpg 1x, img/advantages/photo-city-tablet@2x.jpg 2x">
               <img src="img/advantages/photo-city-mobile.jpg" srcset="img/advantages/photo-city-mobile@2x.jpg 2x" alt="город Седона." width="320" height="260">
@@ -136,6 +143,9 @@
               </p>
             </div>
             <picture class="advantages__image advantages__image--image-2">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
               <source media="(min-width: 1200px)" srcset="img/advantages/photo-bridge-desktop.jpg 1x, img/advantages/photo-bridge-desktop@2x.jpg 2x">
               <source media="(min-width: 768px)" srcset="img/advantages/photo-bridge-tablet.jpg 1x, img/advantages/photo-bridge-tablet@2x.jpg 2x">
               <source media="(max-width: 767px)" srcset="img/advantages/photo-bridge-mobile.jpg 1x, img/advantages/photo-bridge-mobile@2x.jpg 2x">
@@ -237,8 +247,10 @@
           </a>
         </div>
       </footer>
-      <script src="js/main.min.js">
+      <script src="js/navigation-menu.js">
       </script>
+      <!--<script src="js/main.min.js">
+      </script>-->
     </div>
   </body>
 </html>
