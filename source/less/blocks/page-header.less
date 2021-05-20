@@ -42,6 +42,10 @@
   position: relative;
   background-repeat: no-repeat, no-repeat;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/page-header/welcome.svg"), url("../img/page-header/welcome-back-mobile@2x.jpg");
+  }
+
   &--simple {
     height: 158px;
     background-image: url("../img/page-header/sedona-simple.svg"), url("../img/page-header/welcome-back-mobile.jpg");
@@ -50,6 +54,10 @@
 
     position: relative;
     background-repeat: no-repeat, no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/page-header/sedona-simple.svg"), url("../img/page-header/welcome-back-mobile@2x.jpg");
+    }
   }
 
   &::after {
@@ -75,6 +83,10 @@
     background-image: url("../img/page-header/welcome.svg"), url("../img/page-header/welcome-back-tablet.jpg");
     background-size: 461px 350px, cover;
     background-position: center 46%, center 31%;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/page-header/welcome.svg"), url("../img/page-header/welcome-back-tablet@2x.jpg");
+    }
 
     &::after,
     &::before {
@@ -103,6 +115,11 @@
       height: 290px;
       background-image: url("../img/page-header/sedona-simple.svg"), url("../img/page-header/welcome-back-tablet.jpg");
       background-position: center 67%, center 100%;
+      background-size: 457px 78px, cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/page-header/sedona-simple.svg"), url("../img/page-header/welcome-back-tablet@2x.jpg");
+      }
     }
 
     &--form {
@@ -116,10 +133,19 @@
     height: 518px;
     background-image: url("../img/page-header/welcome.svg"), url("../img/page-header/welcome-back-desktop.jpg");
 
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/page-header/welcome.svg"), url("../img/page-header/welcome-back-desktop@2x.jpg");
+    }
+
     &--simple {
       height: 300px;
       background-image: url("../img/page-header/sedona-simple-desktop.svg"), url("../img/page-header/welcome-back-desktop.jpg");
       background-position: center 67%, center 100%;
+      background-size: 460px 80px, cover;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/page-header/sedona-simple-desktop.svg"), url("../img/page-header/welcome-back-desktop@2x.jpg");
+      }
     }
 
     &::after {
