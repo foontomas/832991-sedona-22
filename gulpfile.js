@@ -33,23 +33,6 @@ const styles = () => {
 
 exports.styles = styles;
 
-//StylesSource
-
-const stylesSource = () => {
-  return gulp.src("source/less/style.less")
-    .pipe(plumber())
-    .pipe(sourcemap.init())
-    .pipe(less())
-    .pipe(postcss([
-      autoprefixer()
-    ]))
-    .pipe(sourcemap.write("."))
-    .pipe(gulp.dest("source/css"))
-    .pipe(sync.stream());
-}
-
-exports.stylesSource = stylesSource;
-
 // HTML
 
 const html = () => {
