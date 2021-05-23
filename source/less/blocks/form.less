@@ -223,6 +223,10 @@
 
   &:nth-child(4) {
     margin-bottom: 0;
+
+    @media (min-width: @tablet-width) {
+      margin-bottom: 20px;
+    }
   }
 }
 
@@ -416,6 +420,7 @@
     margin: 0 auto;
     padding-right: 0;
     padding-left: 0;
+    padding-bottom: 0;
     margin-bottom: 45px;
     position: relative;
     border-bottom: none;
@@ -465,10 +470,18 @@
     margin-right: 58px;
   }
 
+  .form__fieldset--sights .form__label:nth-child(2n) {
+    margin-right: 58px;
+  }
+
   .form__fieldset--sights .form__label:nth-child(4) {
     margin-left: 2px;
     margin-right: 58px;
-    margin-bottom: 0;
+    margin-bottom: 32px;
+  }
+
+  .form__fieldset--sights .form__label:nth-child(5) {
+    margin-bottom: 32px;
   }
 
   .form__legend {
@@ -497,13 +510,17 @@
     margin-bottom: 20px;
     padding-left: 6px;
 
-    &:nth-child(4) {
+    /*&:nth-child(4) {
       margin-bottom: 0;
-    }
+    }*/
   }
 
   .form__fieldset--introdution .form__label {
     margin-bottom: 19px;
+
+    &:nth-child(4) {
+      margin-bottom: 19px;
+    }
   }
 
   .form__fieldset--introdution .form__legend {
@@ -718,26 +735,30 @@
 
   .form__fieldset--sights .form__label:nth-child(2) {
     margin-right: 59px;
-    margin-bottom: 0;
+    //margin-bottom: 0;
     margin-left: 0;
   }
 
   .form__fieldset--sights .form__label:nth-child(3) {
     margin-right: 57px;
-    margin-bottom: 0;
+    //margin-bottom: 0;
     margin-left: 0;
   }
 
   .form__fieldset--sights .form__label:nth-child(4) {
     margin-right: 38px;
-    margin-bottom: 0;
+    //margin-bottom: 0;
     margin-left: 0;
   }
 
   .form__fieldset--sights .form__label:nth-child(5) {
     margin-right: 0;
-    margin-bottom: 0;
+    //margin-bottom: 0;
     margin-left: 0;
+  }
+
+  .form__fieldset--sights .form__label {
+    margin-bottom: 32px;
   }
 
   .form__fieldset--sights input[type="checkbox"] ~ .form__span {

@@ -10,7 +10,7 @@
   color: @white;
   font-size: 14px;
   line-height: 21px;
-  min-width: 320px;
+  min-width: 280px;
 
   &--additional {
     background-color: @grey-back;
@@ -48,6 +48,12 @@
 }
 
 @media (max-width: @mobile-width-only) {
+  .advantages--additional {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: @grey-back;
+  }
+
   .advantages__text-card {
     padding-top: 40px;
     padding-bottom: 35px;
@@ -62,8 +68,19 @@
 
     &--additional {
       padding-top: 26px;
-      padding-bottom: 25px;
+      padding-bottom: 24px;
     }
+
+    /*&--additional::after {
+      content: "";
+      height: 1px;
+      width: 123px;
+      position: absolute;
+      background-color: @vertical-border;
+      right: -94px;
+      top: -70px;
+      z-index: 5;
+    }*/
   }
 
   .advantages__text-card--triangle .advantages__p {
@@ -89,8 +106,8 @@
   }
 
   .advantages__text-card--additional .advantages__p {
-    padding-right: 36px;
-    padding-left: 36px;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 
   .advantages__br {
@@ -119,9 +136,9 @@
     box-sizing: border-box;
 
     &--additional {
-      padding-top: 41px;
+      padding-top: 43px;
       padding-right: 34px;
-      padding-bottom: 44px;
+      padding-bottom: 43px;
       padding-left: 33px;
     }
 
