@@ -61,12 +61,17 @@
     z-index: 99;
     background-repeat: no-repeat;
     position: absolute;
-    top: 47%;
-    left: 48%;
+    top: 45%;
+    left: 46%;
 
-    @media (max-width: @mobile-width-only) {
+    @media (max-width: @tablet-width) {
+      top: 47%;
+      left: 48%;
+    }
+
+    @media (max-width: @desktop-width) {
       top: 45%;
-      left: 46%;
+      left: 49%;
     }
   }
 }

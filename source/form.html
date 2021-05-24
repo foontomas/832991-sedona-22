@@ -20,31 +20,32 @@
   <body class="body">
     <div class="body__container">
       <header class="page-header">
-        <a class="page-header__logo" href="index.html">
+        <a class="page-header__logo" href="index.html" tabindex="5">
                 <picture>
-                  <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
-                  <img class="page-header__logo-image" src="img/logotype.svg" width="102" height="84" alt="Логотип города Седона.">
+                  <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg 1x">
+                  <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg 1x">
+                  <img class="page-header__logo-image" src="img/logotype.svg" alt="Логотип города Седона.">
                 </picture>
               </a>
         <nav class="main-nav main-nav--opened main-nav--nojs" aria-label="навигация по сайту">
           <ul class="nav-list">
             <li class="nav-list__item">
-              <a class="nav-list__link" href="index.html">
+              <a class="nav-list__link" href="index.html" tabindex="1">
                 главная
               </a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="catalog.html">
+              <a class="nav-list__link" href="catalog.html" tabindex="2">
                 фото и видео
               </a>
             </li>
             <li class="nav-list__item nav-list__item--active">
-              <a class="nav-list__link">
+              <a class="nav-list__link" tabindex="3">
                 форма отзыва
               </a>
             </li>
             <li class="nav-list__item">
-              <a class="nav-list__link" href="https://htmlacademy.ru">
+              <a class="nav-list__link" href="https://htmlacademy.ru" tabindex="4">
                 html academy
               </a>
             </li>
@@ -84,16 +85,16 @@
             </legend>
             <label class="form__label" for="name">
               имя*:
-              <input class="form__text-input" type="text" name="firstname" id="name" placeholder="Петр" size="50" pattern="^[А-Яа-яЁё\s]+$" required>
+              <input class="form__text-input" type="text" name="firstname" id="name" placeholder="Петр" size="50" pattern="^[А-Яа-яЁё\s]+$" tabindex="6" required>
             </label>
             <label class="form__label" for="surname">
               фамилия*:
-              <input class="form__text-input" type="text" name="lastname" id="surname" placeholder="Иванов" size="50" pattern="^[А-Яа-яЁё\s]+$" required>
+              <input class="form__text-input" type="text" name="lastname" id="surname" placeholder="Иванов" size="50" pattern="^[А-Яа-яЁё\s]+$" tabindex="7" required>
 
             </label>
             <label class="form__label" for="middlename">
               отчество:
-              <input class="form__text-input form__text-input--intro3 " type="text" name="secondname" id="middlename" placeholder="Александрович" size="50" pattern="^[А-Яа-яЁё\s]+$">
+              <input class="form__text-input form__text-input--intro3 " type="text" name="secondname" id="middlename" placeholder="Александрович" size="50" tabindex="8" pattern="^[А-Яа-яЁё\s]+$">
 
             </label>
           </fieldset>
@@ -105,7 +106,7 @@
               <span class="form__label--desktop-label">контактный</span>&nbsp;телефон*:
             </label>
             <div class="form__input-cover form__input-cover--phone">
-              <input class="form__text-input form__text-input--phone" type="tel" name="tel" id="phone-number" placeholder="Введите телефон" size="25" required>
+              <input class="form__text-input form__text-input--phone" type="tel" name="tel" id="phone-number" placeholder="Введите телефон" size="25" tabindex="12" required>
               <span class="form__icon">
               </span>
             </div>
@@ -113,7 +114,7 @@
               электронная почта*:
             </label>
             <div class="form__input-cover">
-              <input class="form__text-input form__text-input--email" type="email" name="mail" id="e-mail" placeholder="Введите e-mail" size="50" required>
+              <input class="form__text-input form__text-input--email" type="email" name="mail" id="e-mail" placeholder="Введите e-mail" size="50" tabindex="13" required>
               <span class="form__icon">
               </span>
             </div>
@@ -123,15 +124,15 @@
               ваше общее впечатление:
             </legend>
             <label class="form__label" for="rather_positive">
-              <input  type="radio" id="rather_positive" value="positive" name="impression_choice" checked><span class=form__span></span>
+              <input  type="radio" id="rather_positive" value="positive" name="impression_choice" checked><span class="form__span" tabindex="9"></span>
               Скорее положительное
             </label>
             <label class="form__label" for="rather_negative">
-              <input  type="radio" id="rather_negative" value="negative" name="impression_choice"><span class="form__span"></span>
+              <input  type="radio" id="rather_negative" value="negative" name="impression_choice"><span class="form__span" tabindex="10"></span>
               Скорее отрицательное
             </label>
             <label class="form__label" for="hard_to_answer">
-              <input  type="radio" id="hard_to_answer" value="hard_to_answer" name="impression_choice"><span class="form__span"></span>
+              <input  type="radio" id="hard_to_answer" value="hard_to_answer" name="impression_choice"><span class="form__span" tabindex="11"></span>
               Затрудняюсь ответить
             </label>
           </fieldset>
@@ -140,19 +141,19 @@
               посещенные достопримечательности:
             </legend>
             <label class="form__label" for="bridge">
-              <input type="checkbox" name="devils-bridge" id="bridge" checked><span class="form__span"></span>
+              <input type="checkbox" name="devils-bridge" id="bridge" checked><span class="form__span" tabindex="14"></span>
               Мост Дьявола
             </label>
             <label class="form__label" for="mount">
-              <input type="checkbox" name="bell-mount" id="mount" checked><span class="form__span"></span>
+              <input type="checkbox" name="bell-mount" id="mount" checked><span class="form__span" tabindex="15"></span>
               Гора-Колокол
             </label>
             <label class="form__label" for="park">
-              <input type="checkbox" name="slide-park" id="park" checked><span class="form__span"></span>
+              <input type="checkbox" name="slide-park" id="park" checked><span class="form__span" tabindex="16"></span>
               Слайд-парк
             </label>
             <label class="form__label" for="rocks">
-              <input type="checkbox" name="red-rocks" id="rocks"><span class="form__span"></span>
+              <input type="checkbox" name="red-rocks" id="rocks"><span class="form__span" tabindex="17"></span>
               Красные скалы
             </label>
           </fieldset>
@@ -160,10 +161,10 @@
             <legend class="form__legend">
               опишите свои эмоции:
             </legend>
-            <textarea class="form__textarea" aria-label="Поле для впечатлений о поездке" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги" maxlength="250"></textarea>
+            <textarea class="form__textarea" aria-label="Поле для впечатлений о поездке" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги" maxlength="250" tabindex="18"></textarea>
           </fieldset>
           <div class="form__button-bar">
-            <button class="form__button" type="submit">
+            <button class="form__button" type="submit" tabindex="19">
               отправить отзыв
             </button>
             <p class="form__p">
