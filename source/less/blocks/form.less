@@ -85,7 +85,7 @@
 
 .form__fieldset--contact-info .form__label,
 .form__fieldset--introdution .form__label,
-.form__p {
+.form__paragraph {
   line-height: 26px;
   font-size: 14px;
 }
@@ -403,7 +403,7 @@
 }
 
 @media (max-width: @mobile-width-only) {
-  .form__p {
+  .form__paragraph {
     display: none;
   }
 }
@@ -531,6 +531,8 @@
   .form__fieldset--emotions .form__legend {
     padding-left: 1px;
     margin-bottom: 55px;
+    width: 100%;
+    position: relative;
   }
 
   .form__fieldset--introdution .form__text-input {
@@ -557,7 +559,7 @@
   .form__fieldset--contact-info {
     padding-left: 51px;
     padding-right: 57px;
-    position: relative;
+    //position: relative;
     border-bottom: none;
     margin-bottom: 21px;
   }
@@ -565,7 +567,9 @@
   .form__fieldset--contact-info .form__legend {
     padding-top: 11px;
     margin-bottom: 19px;
-    padding-left: 7px;
+    padding-left: 3px;
+    width: 100%;
+    position: relative;
 
     &::after {
       content: "";
@@ -573,7 +577,7 @@
       width: 123px;
       position: absolute;
       background-color: @vertical-border;
-      right: 58px;
+      right: 6px;
       top: 20px;
       z-index: 5;
     }
@@ -584,7 +588,7 @@
       width: 123px;
       position: absolute;
       background-color: @vertical-border;
-      left: 58px;
+      left: 6px;
       top: 20px;
       z-index: 5;
     }
@@ -627,7 +631,7 @@
     padding-top: 18px;
   }
 
-  .form__button-bar .form__p {
+  .form__button-bar .form__paragraph {
     margin-top: 0;
     margin-bottom: 0;
     padding-top: 19px;
@@ -707,6 +711,7 @@
   .form__fieldset--contact-info .form__legend {
     padding-top: 13px;
     margin-bottom: 65px;
+    padding-left: 2px;
   }
 
   .form__label--desktop-label {
@@ -783,19 +788,19 @@
     margin-bottom: 18px;
   }
 
-  .form__button-bar .form__p {
+  .form__button-bar .form__paragraph {
     padding-top: 19px;
     padding-right: 61px;
   }
 
   .form__fieldset--contact-info .form__legend::before {
-    left: 118px;
+    left: 67px;
     top: 23px;
     width: 280px;
   }
 
   .form__fieldset--contact-info .form__legend::after {
-    right: 119px;
+    right: 67px;
     top: 23px;
     width: 280px;
   }

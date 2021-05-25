@@ -1,6 +1,7 @@
 let navMain = document.querySelector('.main-nav');
 let navToggle = document.querySelector('.main-nav__toggle');
 let logoItem = document.querySelector('.page-header__logo');
+let pseudoMap = document.querySelector('.map-search__map');
 
 navMain.classList.remove('main-nav--nojs');
 navMain.classList.remove('main-nav--opened');
@@ -18,3 +19,9 @@ navToggle.addEventListener('click', function() {
     logoItem.classList.add('page-header__logo--closed');
   }
 });
+
+const mapOverlay = () => {
+  if (pseudoMap.classList.contains('map-search__map--nojs')) {
+      pseudoMap.classList.remove('map-search__map--nojs');
+  }
+}
